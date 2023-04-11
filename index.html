@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<div id="container">
+    <div class="container-input">
+        <input type="text" id="data" class="container-input-item" maxlength="20" placeholder="Please enter city..">
+    </div>
+    <div class="line_blocks">
+        <div class="block-background">
+            <div class="column block">
+                <div class="line">
+                    <img class="img1" src="https://cdn.glitch.global/a25f835f-b792-4b5e-9358-0497fe4a563e/icons8.png?v=1660605374091">
+                </div>
+                <h1 id="place"></h1>
+                <p id="date"></p>
+            </div>
+        </div>
+
+        <div class="block-background">
+            <div class="column block">
+                <h1 id="temp"></h1>
+                <p id="feelsLike"></p>
+                <div class="line">
+                    <div class="line with-icon">
+                        <img class="img1" src="https://cdn.glitch.global/a25f835f-b792-4b5e-9358-0497fe4a563e/max.png?v=1658667804648">
+                        <p id="max"></p>
+                    </div>
+                    <div class="line with-icon">
+                        <img class="img1" src="https://cdn.glitch.global/a25f835f-b792-4b5e-9358-0497fe4a563e/min.png?v=1658667783502">
+                        <p id="min"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-background">
+            <div class="column block">
+                <div class="line">
+                    <img class="img2" id="iconWeather" src="" alt="Icon">
+                </div>
+                <h1 id="description"></h1>
+                <div class="line">
+                    <img class="img3" src="https://cdn.glitch.global/a25f835f-b792-4b5e-9358-0497fe4a563e/wind.png?v=1658667765260">
+                    <p id="wind"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="index.js"></script>
+
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+
+</html>
